@@ -1,0 +1,37 @@
+.celdas-2{
+    background-color: green;
+}
+
+.celdas-3{
+    background-color: yellow;
+}
+
+.celdas-4{
+    background-color: brown;
+}
+
+.pregunta{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+}
+
+#pregunta3 span{
+    background-color: yellow;
+}
+
+.comentarios{
+    border-style: dotted;
+    font-style: italic;
+}
+
+.negrita{
+    font-weight:bold;
+}
+
+p:nth-child(2n){
+    text-decoration: underline;
+}
+
+li > a {    
+    background-color: turquoise;
+}
