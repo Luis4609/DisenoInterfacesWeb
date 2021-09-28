@@ -1,0 +1,38 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  height: 40px;
+  vertical-align: bottom;
+}
+
+th {
+  font-weight: bold;
+}
+img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+}
+
+.par:first-child {
+  background-color: wheat;
+}
+
+#par {
+  background-color: wheat;
+}
+
+.cabecera {
+  background: linear-gradient(rgb(226, 235, 203) 55%, white 45%);
+}
+
+tr:hover td {
+  background-color: yellow;
+}
+
+.row {
+  background-color: teal;
+}
