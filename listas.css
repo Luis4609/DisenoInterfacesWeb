@@ -1,0 +1,38 @@
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #123D43;
+	text-decoration: underline;
+	text-align: center;
+	cursor: text;
+	text-shadow: 3px 3px 2px #789498;
+}
+ul.redes li {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	/* Estilos de li para cumplir las especifiaciones */
+	color: #442A5D;
+}
+p.titulo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	background-color: #F9DDC3;
+	color: #6E431C;
+}
+
+#otraasignatura {
+	background-color: #CEA885;
+	width: 6em;
+	text-align: center;
+	height: 1.5em;
+	vertical-align: middle;
+}
+/* Hay que conseguir que este estilo se aplique al posicionarse sobre el elemento con contenido LMSGI */
+div:hover a{ 
+	font-weight: bold;
+	color: #FFF;
+}
+
+ul {
+	list-style-image: url("vineta_circle1.png");
+  }
