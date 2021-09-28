@@ -1,0 +1,10 @@
+strong{
+    display: block;
+}
+.span-display{
+    display: inline;
+}
+
+.span-negrita{
+    display: inline-block;
+}

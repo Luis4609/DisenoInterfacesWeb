@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Bloques y lineas</title>
+	<style type="text/css">
+		* { /* Todos los elementos de la página tienen borde */
+			border: thin solid #442A5D;
+		}
+		
+		/* Del resto hay que crear clases por cada párrafo, en función de la propiedad display */
+		
+	</style>
+</head>
+
+<body>
+	<span class="span span-display">Con la propiedad display podemos cambiar la forma por defecto en que aparace cada elemento y hacer que un elemento como una negrita se comporte como si fuera un bloque: <span id="negrita" class="span span-negrita"><strong><a>Negrita</a></strong></span>, y cuando continuamos la frase salta antes y después de la negrita de linea como cualquier elemento en bloque.</span>
+	<p>O hacer que un elemento como este párrafo se comporte como si fuera un elemento en linea.</p>
+
+	<p>Este es otro parrafo puesto en modo linea.</p>
+	<p>Párrafo normal.</p>
+	<p>Párrafo en estilo lista</p>
+	<p>Párrafo en estilo lista</p>
+	<p>También podemos utilizar display none para que un elemento no aparezca, como este párrafo repetido justo debajo.</p>
+	<p>También podemos utilizar display none para que un elemento no aparezca, como este párrafo repetido justo debajo.</p>
+	<p>Veamos ahora un <a href="http://www.google.es" class="bloqueenlinea">hipervinculo</a> en bloque en linea que si admite tamaño a diferencia del elemento en linea</p>
+
+	<p>Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
+	<p>Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
+	<p>Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
+	
+	<p>Párrafo desplazado: propiedad posición relativa desplazado desde arriba en 20 y desde la derecha en 20.</p>
+	<p>Las otras posibilidades en cuando a posición son static: se queda donde esta habitualmente, relativa se mueve respesto a esta, absoluta el elemento se mostrará en la posición indicada por las coordenadas y fija en la que el elemento se mantiene en las coordenadas, podemos ver un ejemplo en <a href="#">esta distribución</a></p>
+</body>
+</html>
