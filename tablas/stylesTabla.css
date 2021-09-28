@@ -15,7 +15,7 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-origin: border-box;
-  background-position: left top;
+  background-position: top left;
 }
 
 .par:first-child {
