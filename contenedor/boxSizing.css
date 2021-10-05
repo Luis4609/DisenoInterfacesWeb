@@ -2,16 +2,17 @@
   border: 1px solid black;
   box-sizing: content-box;
   overflow: auto;
-  width: 1200px;
+  width: 580px;
+  position: static;
 }
 
 .caja {
   box-sizing: border-box;
-  width: 32%;
+  width: 31%;
   height: 100px;
-  border: solid #5b6dcd 1px;
+  border: solid black 1px;
   position: relative;
-  margin: 0.5em;
+  margin: 6px;
   float: left;
 }
 
@@ -25,4 +26,20 @@
 
 .blue {
   background-color: blue;
+}
+
+#caja2 {
+  visibility: hidden;
+}
+#caja4,
+#caja6,
+#caja8 {
+  display: none;
+}
+#caja7{
+    float: right;
+}
+#caja9{
+    float: left;
+    clear: both;
 }
