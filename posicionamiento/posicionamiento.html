@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Posicionamiento</title>
+	<style>
+		body{
+			font-size: 14px;
+		}		
+		p:first-of-type{
+			text-align: right;
+		}	
+		div.estandar{
+			width: 4.25em; 
+			height: 4.25em;
+			padding: 3px;
+		}
+		div#posicionamiento1{
+			/* Añadir propiedades de posicionamiento */
+			width: 100%; 
+			height: 1px; 
+			border-top: 1px dashed #CCCCCC ;
+		}
+		div#posicionamiento2{
+			/* Añadir propiedades de posicionamiento */
+			width: 1px;
+			height: 100%;
+			border-left: 1px dashed #CCCCCC;
+		}
+		div#posicionamiento3{
+			/* Añadir propiedades de posicionamiento */		 
+			border: 2px solid blue; 			
+		}
+		div#posicionamiento4{
+			/* Añadir propiedades de posicionamiento */		
+			border: 2px solid green; 			
+		}
+		div#posicionamiento5{
+			/* Añadir propiedades de posicionamiento */
+			border: 2px solid red;			
+		}
+		div#posicionamiento6{
+			/* Añadir propiedades de posicionamiento */ 			
+			border: 2px solid orange; 			
+		}
+		div#posicionamiento7{
+			/* Añadir propiedades de posicionamiento */			
+			border: 2px solid pink;			
+		}
+		div#posicionamiento8{
+			/* Añadir propiedades de posicionamiento */			
+			border: 2px solid lime;			
+		}
+		div#posicionamiento9{
+			/* Añadir propiedades de posicionamiento */			
+			border: 2px solid cyan; 			
+		}
+		div#posicionamiento10{
+			/* Añadir propiedades de posicionamiento */
+			width: 28em;
+			height: 28em;
+			border: 2px solid cyan;
+			padding: 3px;			
+		}
+	</style>
+</head>
+
+<body>
+<p style="text-align: right">Las lineas discontinuas son capas</p>
+<div class="ejemplo" style="height: 200px">
+  <div id="posicionamiento1"></div>
+  <div id="posicionamiento2"></div>
+  <div id="posicionamiento3" class="estandar">top: 0;<br />left: 0;</div>
+  <div id="posicionamiento4" class="estandar">bottom: 0;<br /> left: 0;</div>
+  <div id="posicionamiento5" class="estandar">top: 50%;<br /> left: 50%;</div>
+  <div id="posicionamiento6" class="estandar">bottom: 50%;<br /> right: 50%;</div>
+  <div id="posicionamiento7" class="estandar">top: 50%;<br /> right: 0;</div>
+  <div id="posicionamiento8" class="estandar">top: 70px;<br />left: 100px;</div>
+  <div id="posicionamiento9" class="estandar">top: 25%;<br /> right: 25%;</div>
+  <div id="posicionamiento10">top y right: 50%;  width y height: 28em; transform: translate(50%, -50%);</div>
+  </div>
+</body>
+</html>
