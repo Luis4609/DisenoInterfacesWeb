@@ -1,0 +1,15 @@
+.container {
+  border: 1px solid black;
+  display: inline-flex;
+  box-sizing: content-box;
+}
+
+.caja {
+  box-sizing: content-box;
+  width: 33%;
+  border: solid #5b6dcd 1px;
+  position: relative;
+  margin: 0.5em;
+  float: left;
+  
+}
