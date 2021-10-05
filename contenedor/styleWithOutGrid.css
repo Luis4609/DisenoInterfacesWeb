@@ -1,15 +1,26 @@
 div.caja {
-    width:200px;
-    height: 200px;
-    padding: 10px;
-    
-    border: 1px solid gray;
-    margin: 0;
-    display: inline-block;
-  }
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  margin: 7px;
+  float: left;
+}
 
-.container{
-    width: 674px;
-    margin: 1em;
-    border: 1px solid black;
-} 
+.container {
+  width: 650px;
+  margin: 1em;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.blanca{
+    background-color: white;
+}
+
+.verde{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
