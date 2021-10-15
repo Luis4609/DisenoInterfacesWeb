@@ -28,3 +28,10 @@ span.negrita {
   margin: 2px;
   float: left;
 }
+.parrafonoafectado{
+  clear: right;
+}
+.derechanoafectado:nth-child(2){
+  float: right;
+  clear: right;
+}
