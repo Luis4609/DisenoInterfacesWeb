@@ -1,0 +1,63 @@
+.tipo {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  color: #755e8b;
+}
+/* Cada div define un estilo a nivel de id con el posicionamiento que le corresponde */
+
+#fija {
+  /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+  width: 7.7rem;
+  height: 3.43rem;
+  background-color: #52797e;
+}
+#estatica_exp {
+  /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+  background-color: #123d43;
+  color: #f9f6c3;
+  width: 18.75rem;
+  margin: 0.6rem;
+}
+#estatica_imp {
+  /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+  background-color: #6e431c;
+  color: #f9ddc3;
+  width: 18.75rem;
+  margin: 0.6rem;
+}
+#absoluta1 {
+  /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+  background-color: #123d43;
+  color: #f9ddc3;
+  height: 6rem;
+  margin: 0.6rem;
+  width: 18.75rem;
+}
+#absoluta2 {
+  /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+  background-color: #755e8b;
+  color: #ceca85;
+  height: 3rem;
+  width: 37rem;
+  margin: 0.6rem;
+}
+#absoluta3 {
+  /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+  background-color: #6e431c;
+  color: #789498;
+  height: 4.375rem;
+  margin: 0.6rem;
+  width: 18.75rem;
+}
+#relativa {
+  /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+  width: 18.75rem;
+  background-color: #31174a;
+  color: #f9f6c3;
+}
+#sticky {
+  /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+  width: 18.75rem;
+  background-color: #31174a;
+  color: #f932c3;
+}
