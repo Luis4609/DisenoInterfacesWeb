@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- El objetivo de este archivo es mostrar cómo se puede crear fácilmente un menú con divs y flexbox -->
+	<title>Ejemplo menu horizontal</title>
+	<style>
+		nav.hmenu{
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+			display: flex; /* Se puede sustituir el display: flex por un float: left para los div con clase item */
+		}
+		
+		nav.hmenu div.item{
+			border: 1px solid #fff;
+			text-align: center;
+			height: 1.3em;
+			width: 7.6em;
+			background: #009F00;
+		}
+		
+		nav.hmenu div.item a{
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		.hmenu li a:hover{
+			background: #00B300;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<nav class="hmenu">
+		<div class="item"><a href="#">Enlace 1</a></div>
+		<div class="item"><a href="#">Enlace 2</a></div>
+		<div class="item"><a href="#">Enlace 3</a></div>
+		<div class="item"><a href="#">Enlace 4</a></div>
+	</nav>
+</body>
+</html>
