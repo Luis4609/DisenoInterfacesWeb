@@ -18,6 +18,7 @@ p.titulo {
 	font-size: 14px;
 	background-color: #F9DDC3;
 	color: #6E431C;
+	font-weight: bold;
 }
 
 #otraasignatura {
@@ -28,7 +29,7 @@ p.titulo {
 	vertical-align: middle;
 }
 /* Hay que conseguir que este estilo se aplique al posicionarse sobre el elemento con contenido LMSGI */
-div:hover a{ 
+#otraasignatura:hover a{ 
 	font-weight: bold;
 	color: #FFF;
 }

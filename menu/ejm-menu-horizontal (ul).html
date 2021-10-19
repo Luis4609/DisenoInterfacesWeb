@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- El objetivo de este archivo es mostrar cómo se puede crear fácilmente un menú con ul, li y flexbox -->
+	<title>Ejemplo menu Horizontal</title>
+	<style>
+		.hmenu{
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+			display: flex;
+		}
+		
+		.hmenu li{
+			border: 1px solid #fff;
+			text-align: center;
+		}
+		
+		/* display: inline-block permite dar tamaños a la etiqueta a, que al ser inline por defecto no los admite */
+		.hmenu li a{
+			height: 1.3em;
+			display: inline-block;
+			width: 7.6em;
+			padding-left: 0.3em;
+			background: #009F00;
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		.hmenu li a:hover{
+			background: #00B300;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<ul class="hmenu">
+		<li><a href="#">Enlace 1</a></li>
+		<li><a href="#">Enlace 2</a></li>
+		<li><a href="#">Enlace 3</a></li>
+		<li><a href="#">Enlace 4</a></li>
+	</ul>
+</body>
+</html>

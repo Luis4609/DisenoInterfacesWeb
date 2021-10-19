@@ -1,0 +1,9 @@
+h2:first-child{
+    font-style: italic;
+}
+
+#consejo{
+    background-color: rgb(166, 202, 37);
+    color: indigo;
+    font-size: larger;
+}

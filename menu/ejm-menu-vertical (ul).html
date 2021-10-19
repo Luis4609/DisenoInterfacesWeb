@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- El objetivo de este archivo es mostrar cómo se puede crear fácilmente un menú con ul y li -->
+	<meta charset="utf-8">
+	<title>Menú vertical</title>
+	<style>
+		.vmenu{
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;			
+		}
+		
+		.vmenu li{
+			margin-bottom: 1px;
+		}
+		
+		/* display: inline-block permite dar tamaños a la etiqueta a, que al ser inline por defecto no los admite */
+		.vmenu li a{
+			height: 1.3em;
+			padding-left: 0.3em;
+			display:inline-block;
+			width: 7.6em;
+			background: #009F00;
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		.vmenu li a:hover{
+			background: #00B300;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<ul class="vmenu">
+		<li><a href="#">Enlace 1</a></li>
+		<li><a href="#">Enlace 2</a></li>
+		<li><a href="#">Enlace 3</a></li>
+		<li><a href="#">Enlace 4</a></li>
+	</ul>
+</body>
+</html>

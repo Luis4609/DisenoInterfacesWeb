@@ -1,0 +1,99 @@
+/* PROPIEDADES GENERALES */
+* {
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+}
+
+#menu {
+  text-align: center;
+  font-size: 12px;
+  width: 50%;
+  margin: 2px auto;
+}
+
+#menu ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+#menu ul li {
+  width: 33.33%;
+  box-sizing: border-box;
+}
+
+#menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(59, 93, 148, 1);
+  border: solid 1px #fff;
+  padding: 0.5rem 0;
+  height: 2rem;
+  border-color: transparent white white transparent; /* Evitamos que los bordes se colapsen */
+  position: relative;
+}
+
+#menu ul li ul {
+  /* Por defecto se oculta el segundo nivel */
+  display: none;
+}
+
+#menu ul li ul li {
+  width: 100%;
+}
+
+/* PROPIEDADES ESPECÍFICAS */
+
+#menu ul li {
+  position: relative;
+}
+
+#menu ul li ul li ul li a.primera {
+  border-top-color: #fff;
+}
+
+/* El primer nivel se muestra horizontal por el uso de flex
+    Se puede eliminar este selector y emplear el de debajo con float,
+    pero está más obsoleto y el diseño puede presentar más problemas*/
+#menu > ul {
+  display: flex;
+}
+
+/* #menu ul li.nivel1 { 
+    float: left;
+} */
+
+#menu ul li a.nivel2 {
+  color: #000;
+}
+
+/* PROPIEDAD HOVER */
+
+#menu ul li a:hover {
+  /* Cambio de color al posicionarnos por encima */
+  background-color: #6cc;
+  color: #000;
+}
+
+#menu ul li:hover ul.nivel2 {
+  /* Se muestra el nivel 2 al posicionarnos sobre el nivel 1 */
+  display: block;
+}
+
+#menu ul li ul li:hover ul.nivel3 {
+  /* Se muestra el nivel 3 desplazado a la derecha al posicionarnos sobre el nivel 2 */
+  display: block;
+  position: absolute;
+  left: 100%; /* Se desplaza el tamaño del contenedor para situarse justo a la derecha */
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#menu ul li ul li a:hover {
+  border-top-color: #000;
+}

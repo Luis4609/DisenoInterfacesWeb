@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+}
+
+header {
+  display: block;
+  background: #0ac57d;
+  padding: 10px 0px;
+}
+section {
+  width: 79%;
+  background: #ccc;
+  float: left;
+  overflow: auto;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+aside {
+  float: right;
+  border: 1px solid red;
+  width: 19%;
+  border: 1px solid red;
+  /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+  /*visibility: hidden;*/
+}
+footer {
+  position: relative;
+  margin-top: -50px;
+  height: 40px;
+  padding: 5px 0px;
+  clear: both;
+  background: #286af0;
+  text-align: center;
+  color: #fff;
+}
+figure {
+  display: table;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+}
+
+/* Style for navbar */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}

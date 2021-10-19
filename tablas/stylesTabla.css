@@ -14,7 +14,8 @@ th {
 img {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left top;
+  background-origin: border-box;
+  background-position: top left;
 }
 
 .par:first-child {

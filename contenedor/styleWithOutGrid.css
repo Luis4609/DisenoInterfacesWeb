@@ -1,0 +1,26 @@
+div.caja {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  margin: 7px;
+  float: left;
+}
+
+.container {
+  width: 650px;
+  margin: 1em;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.blanca{
+    background-color: white;
+}
+
+.verde{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
