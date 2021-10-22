@@ -1,0 +1,35 @@
+.flex-container{
+	max-width:400px;
+	width:90%;
+	height: 15rem;
+	list-style-type:none;
+	margin:1.2em auto;
+	padding:0;
+	background-color:midnightblue;
+	
+	/* Propiedades de flexbox generales */
+	display: flex;
+	flex-flow: row wrap-reverse; /* Por cada línea se altera el orden con wrap-reverse */
+}
+
+/* Propiedades de flexbox para cada contenedor según la imagen del enunciado */
+.flex-container:nth-child(1){
+	justify-content: space-around;
+	align-content: center;
+}
+
+.flex-container:nth-child(2){
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.item{
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem; /* Podríamos centrarlo haciendo cada ítem display flex y sustiyéndolo por line-height y text-align */
+	text-align:center;
+	font-size: 1.2em;
+	background-color:steelblue;
+	color:#fff;	
+	border: 1px solid white;
+}
