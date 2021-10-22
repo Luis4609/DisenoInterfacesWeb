@@ -1,0 +1,43 @@
+:root{
+	--alto: 12.5rem;
+}
+
+div.test {
+  background-color: aquamarine; 
+  margin-bottom: 30px;
+}
+
+ul, li {
+  padding: 0; 
+  list-style: none;
+}
+
+/* Primer contenedor */
+.flexend1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Se distribuyen equitativamente utilizando los extremos */
+  align-items: flex-end; /* Al final del eje secundario, que es el vertical */
+  height: var(--alto);
+}
+
+/* Segundo contenedor */
+.flexend2 {
+  display: flex;
+  flex-direction: row-reverse; /* Hay que cambiar el orden según el enunciado */
+  justify-content: space-around;  /* Se distribuyen equitativamente dejando el mismo espacio a cada lado. Probar la diferencia son space-evenly */
+  align-items: flex-end; /* Al final del eje secundario, que es el vertical */
+  height: var(--alto);
+}
+
+div.test ul li {
+  display: block;
+  width: 18%;     
+  background-color: orangered;
+  height: 3em;
+  line-height: 3em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;      
+}

@@ -8,10 +8,12 @@ body {
 }
 
 .nav {
-  height: 50px;
+ 
   width: 100%;
   background-color: #0eeca2;
   position: relative;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav > .nav-header {
@@ -30,8 +32,8 @@ body {
 }
 
 .nav > .nav-links {
-  display: inline;
-  float: right;
+  display: flex;
+  justify-content: space-around;
   font-size: 18px;
 }
 
