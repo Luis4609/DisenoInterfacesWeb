@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    width: 80%;
+    justify-content: left;
+    background-color: grey;
+    height: 50px;
+    align-items: center;
+    overflow: visible;
+}
+.item{
+    border: 1px solid black;
+    flex-shrink: 0;
+    background-color: wheat;
+    width: 300px;
+    height: 20px;
+    
+}
+#primero{
+    order: 3;
+}
+#segundo{
+    order: 4;
+}
+#tercero{
+    order: 1;
+}
+#cuarto{
+    order: 2;
+}
