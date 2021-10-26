@@ -21,8 +21,6 @@ div {
 .flex-container {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
-  align-items: flex-end;
   justify-content: flex-end;
   flex-wrap: wrap;
   width: 100%;
@@ -30,10 +28,10 @@ div {
 .flex-item {
   width: 20%;
   height: 50px;
-  padding: 10px;
   margin-bottom: 10px;
+  border:1px dotted blue;
 }
-#last{
-    align-self: flex-end;
-    width: 20%;
+#last {
+  align-self: flex-end;
+  width: 20%;
 }
