@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+div.container header {
+  background-color: #bbb;
+  display: flex;
+  padding: 1em;
+}
+
+div.container header div {
+  background-color: burlywood;
+  border: 1px solid black;
+  padding: 1em;
+  flex-basis: 15%;
+}
+
+/* El segundo elemento no tiene el valor de order porque por defecto es 0 y se mostraría primero */
+
+/* Cambiando el orden de los elementos flexibles según el enunciado */
+div.container header :nth-child(1) {
+  order: 2;  
+}
+
+/* En los dos primeros ítems no se aplica factor de crecimiento y se quedan con el mismo tamaño,
+	mientras que en el tercero y cuarto se aplica de manera proporcional para cumplir los requisitos del enunciado */
+div.container header :nth-child(3) {
+  order: 1;
+  flex-grow: 1; 
+}
+
+div.container header :nth-child(4) {
+  order: 1;
+  flex-grow: 2;
+}
+
+div.container footer {
+  background-color: cadetblue;
+  display: flex;
+  height: 200px;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+div.container footer div {
+  background-color: burlywood;
+  border: 1px solid black;
+  height: 150px;
+  flex-basis: 20%;
+}
+
+/* Se aplica flex-grow: 10, pero en realidad llega un punto que el segundo ítem no puede crecer más */
+div.container footer :nth-child(1) {
+  flex-grow: 1;
+}
+
+div.container footer :nth-child(2) {
+  flex-grow: 10;
+}
+
+div.container footer :nth-child(3) {
+  flex-grow: 1;
+}
