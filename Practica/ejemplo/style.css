@@ -20,11 +20,13 @@ body {
   font-size: 22px;
   color: #fff;
   padding: 10px 10px 10px 10px;
+  width: 20%;
 }
 .nav > .nav-links {
   display: flex;
   justify-content: space-around;
   font-size: 18px;
+  width: 80%;
 }
 
 .nav > .nav-links > a {
