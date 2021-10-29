@@ -4,13 +4,16 @@
 
 - Exercices for Unit-1 
 	> 1.Selectores complejos
+
     > 2.Selectores de enlaces
+
     > 3.Textos
+
     > 4.Tablas
+
     > 5.Listas
 
 - Exercices for Unit-2
    > Flexbox    
-
-
- > Demo practica: http://htmlpreview.github.io/?https://github.com/Luis4609/DisenoInterfacesWeb/blob/main/Practica/ejemplo/index.html  
+   
+   > Demo practica: http://htmlpreview.github.io/?https://github.com/Luis4609/DisenoInterfacesWeb/blob/main/Practica/ejemplo/index.html  
