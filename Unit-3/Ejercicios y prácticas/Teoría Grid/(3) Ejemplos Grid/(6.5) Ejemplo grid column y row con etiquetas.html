@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- En esta página se muestra el funcionamiento de grid-row y grid-column con etiquetas -->
+	<style>
+		* {box-sizing: border-box;}
+
+		.wrapper {
+		  border: 2px solid #f76707;
+		  border-radius: 5px;
+		  background-color: #fff4e6;
+		}
+
+		.wrapper > div {
+		  border: 2px solid #ffa94d;
+		  border-radius: 5px;
+		  background-color: #ffd8a8;
+		  padding: 1em;
+		  color: #d9480f;
+		}
+		
+		.wrapper {
+		  display: grid;
+		  grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
+		  grid-template-rows: [main-start] 6rem [content-start] 6rem [content-end] 6rem [main-end];
+		}
+		
+		.box1 {
+		  grid-column-start: main-start;
+		  grid-row-start: main-start;
+		  grid-row-end: main-end;
+		}
+
+		.box2 {
+		  grid-column-start: content-end;
+		  grid-row-start: main-start;
+		  grid-row-end: content-end;
+		}
+
+		.box3 {
+		  grid-column-start: content-start;
+		  grid-row-start: main-start;
+		}
+
+		.box4 {
+		  grid-column-start: content-start;
+		  grid-column-end: main-end;
+		  grid-row-start: content-end;
+		}
+		
+	</style>
+</head>
+<body>	
+	<div class="wrapper">
+	  <div class="box1">One</div>
+	  <div class="box2">Two</div>
+	  <div class="box3">Three</div>
+	  <div class="box4">Four</div>
+	</div>
+</body>
+	

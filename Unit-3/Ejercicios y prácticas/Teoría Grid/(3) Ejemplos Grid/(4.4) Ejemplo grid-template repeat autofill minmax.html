@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- En esta página se muestra una estructura básica en grid con la palabra reservada
+	 repeat para ahorrar código junto con minmax y autofill para crear dinámicamente tantas columnas 
+	 -->
+    <meta charset="utf-8">
+    <style>
+		.wrapper {
+			margin: 2.5rem;
+			width: 50%;
+			display: grid;
+			grid-gap: 1em;
+			grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)) ;
+			background-color: #fff;
+			color: #444;
+		}
+
+		.box {
+			background-color: #444;
+			color: #fff;
+			border-radius: 5px;
+			padding: 1em;
+			font-size: 150%;
+		}
+   </style>
+</head>
+
+ <body>
+
+   <div class="wrapper">
+     <div class="box a">A</div>
+     <div class="box b">B</div>
+     <div class="box c">C</div>
+     <div class="box d">D</div>
+     <div class="box e">E</div>
+     <div class="box f">F</div>
+     <div class="box g">G</div>
+     <div class="box h">H</div>
+     <div class="box i">I</div>
+   </div>
+</body>
+</html>

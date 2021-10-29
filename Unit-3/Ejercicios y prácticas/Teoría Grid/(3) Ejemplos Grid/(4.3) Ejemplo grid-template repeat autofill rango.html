@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- En esta página se muestra una estructura básica en grid con la palabra reservada
+		 repeat y auto-fill para crear coumnas dinámicamente en función del tamaño -->
+    <meta charset="utf-8">
+    <style>
+		.box {
+			background-color: #444;
+			color: #fff;
+			border-radius: 5px;
+			padding: 0.5em;
+			font-size: 150%;
+		}
+
+		.box:nth-child(even) {
+			background-color: #ccc;
+			color: #000;
+		}
+
+		.wrapper {
+			margin: 2.5rem;
+			display: grid;
+			border:1px solid #000;
+			grid-gap: 1em;
+			grid-template-columns: repeat(auto-fill, 6rem 12rem);
+		}
+
+   </style>
+</head>
+
+ <body>
+
+   <div class="wrapper">
+     <div class="box">1</div>
+     <div class="box">2</div>
+     <div class="box">3</div>
+     <div class="box">4</div>
+     <div class="box">5</div>
+     <div class="box">6</div>
+     <div class="box">7</div>
+     <div class="box">8</div>
+     <div class="box">9</div>
+     <div class="box">10</div>
+     <div class="box">11</div>
+     <div class="box">12</div>
+   </div>
+</body>
+</html>

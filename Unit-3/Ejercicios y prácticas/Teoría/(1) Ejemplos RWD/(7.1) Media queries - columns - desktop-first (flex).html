@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- En este archivo se estudia cómo elaborar un diseño responsivo con media queries -->
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		/* Contenedor flexbox */
+		.row {
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+
+		/* Cuatro columnas iguales */
+		.column {
+		  flex: 25%;
+		  padding: 1em;
+		}
+
+		/* En pantallas superiores a 992px */
+		@media screen and (max-width: 992px) {
+		  .column {
+			flex: 50%;
+		  }
+		}
+
+		/* En pantallas superiores a 600px */
+		@media screen and (max-width: 600px) {
+		  .row {
+			flex-direction: column;
+		  }
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Diseño responsivo por columnas</h2>
+	<p>Redimensiona el navegador para ver el efecto</p>
+
+	<div class="row">
+	  <div class="column" style="background-color:#aaa;">
+		<h2>Column 1</h2>
+		<p>Some text..</p>
+	  </div>
+	  
+	  <div class="column" style="background-color:#bbb;">
+		<h2>Column 2</h2>
+		<p>Some text..</p>
+	  </div>
+	  
+	  <div class="column" style="background-color:#ccc;">
+		<h2>Column 3</h2>
+		<p>Some text..</p>
+	  </div>
+	  
+	  <div class="column" style="background-color:#ddd;">
+		<h2>Column 4</h2>
+		<p>Some text..</p>
+	  </div>
+	</div>
+
+</body>
+</html>

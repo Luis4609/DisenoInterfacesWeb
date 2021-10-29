@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- En este archivo se estudian el formato básico de las media queries-->
+	<style>
+		div.example {
+		background-color: yellow;
+		padding: 1em;
+		width: 50%;
+		height: 30vh;
+		}
+
+		@media screen and (max-width: 600px) {
+			div.example {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Ocultar elementos según resolución</h2>
+
+	<div class="example">DIV que se va a ocultar</div>
+
+	<p>Prueba a redimensionar a 600px para ver el resultado</p>
+
+</body>
+</html>
+

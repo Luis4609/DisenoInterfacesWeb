@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- En este archivo se estudia cómo elaborar un menú responsivo básico -->
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		/* Barra superior*/
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		/* Enlaces */
+		.topnav a {
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 1em;
+		  width: 100%;
+		  text-decoration: none;
+		}
+
+		/* Cambio de color al posicionarnos por encima */
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+
+		/* Cuando la pantalla cambia de tamaño a partir de 600px se cambia el formato del menú */
+		@media screen and (min-width: 600px) {
+		  .topnav {
+			display: flex;
+		  }
+		  
+		  .topnav a {
+		    min-width: 200px;
+			width: 10%;			
+		  }
+		}
+	</style>
+</head>
+<body>
+	<h2>Menú de navegación responsivo</h2>
+	<p>Redimensiona el navegador y prueba a ver qué ocurre a partir de 600px</p>
+
+	<div class="topnav">
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+	</div>
+
+</body>
+</html>
+

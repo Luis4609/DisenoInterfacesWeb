@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+div.container{
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+div.container article {
+    background-color: blue;
+    padding: 1em;
+}
+
+div.container aside {
+    background-color: red;
+    padding: 1em;
+}

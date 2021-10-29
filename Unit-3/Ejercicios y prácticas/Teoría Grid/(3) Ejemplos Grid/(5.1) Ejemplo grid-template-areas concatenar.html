@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- En esta página se muestra una estructura básica en grid asignando nombres a cada área con
+		 grid-template-areas -->
+	<style>
+		.grid {
+			width: 50%;
+			display: grid;
+			grid-template-areas: "head head"
+								  "menu main"
+								  "foot foot";
+		}
+
+		.grid div:nth-child(1) { grid-area: head; background: blue }
+		.grid div:nth-child(2) { grid-area: menu; background: red }
+		.grid div:nth-child(3) { grid-area: main; background: green }
+		.grid div:nth-child(4) { grid-area: foot; background: orange }
+		
+	</style>
+</head>
+<body>	
+	<div class="grid"> <!-- Contenedor-->
+		<div class="item">Item 1</div> <!-- Fila 1 -->
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+	</div>
+</body>
+	

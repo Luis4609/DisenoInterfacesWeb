@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- En esta página se muestra una estructura básica en grid con filas y columnas que posicionamos y 
+		expandimos manualmente con grid-column y grid-row -->
+	<style>
+		.grid {
+			width: 60%;
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-columns: repeat(4, 200px);
+			grid-template-rows: repeat(3, 200px);
+		}
+		
+		div.grid div{
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+		
+		.item-a { 
+			grid-row: 1 / 3; 
+		} 
+		
+		.item-b { 
+			grid-column: 3 / 5; 
+		}
+		
+		.item-c { 
+			grid-row: 2 / 4; 
+		}
+		
+		.item-d {
+			grid-column: 3 / 5; 
+		}
+
+		
+	</style>
+</head>
+<body>	
+	<div class="grid"> <!-- Contenedor-->
+		<div class="item-a">Item 1 con grid-row: 1 / 3</div> <!-- Ítems -->
+		<div>Item 2</div>
+		<div class="item-b">Item 3 con grid-column: 3 / 5</div>
+		<div>Item 4</div>
+		<div class="item-c">Item 5 con grid-row: 2 / 4</div>
+		<div>Item 6</div>
+		<div>Item 7</div>
+		<div class="item-d">Item 8 con grid-column: 3 / 5</div>
+	</div>
+</body>

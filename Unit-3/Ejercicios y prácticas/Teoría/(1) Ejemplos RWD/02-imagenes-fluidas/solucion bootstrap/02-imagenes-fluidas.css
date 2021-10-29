@@ -1,0 +1,25 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+div.container{
+    margin: 0 auto;
+    font-size: 16px;
+	display: flex; /* Con flex se sitúan el article y el aside en la misma línea arriba del todo del contenedor */
+	align-items: flex-start;
+}
+
+div.container article{
+    background-color: blue;
+    padding: 1em;
+    width: 70%;
+    box-sizing: border-box; /* tiene en cuenta el pading y el borde, pero no el margin */
+}
+
+div.container aside{
+    background-color: red;
+    padding: 1em;
+    width: 30%;
+    box-sizing: border-box; /* tiene en cuenta el pading y el borde, pero no el margin */
+}
