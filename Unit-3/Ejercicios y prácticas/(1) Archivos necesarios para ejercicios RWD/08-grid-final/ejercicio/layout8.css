@@ -1,0 +1,29 @@
+html {
+	box-sizing: border-box;
+	font: 87.5% / 1.4 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	list-style: none;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	display: grid;
+	max-width: 960px;
+	grid-template-columns: 1fr;   
+	grid-template-rows: auto;
+	grid-auto-flow: dense;
+}
+
+.wrapper li {
+	margin: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.5em;
