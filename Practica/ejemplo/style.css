@@ -91,6 +91,8 @@ body {
 }
 .element > .text {
   width: 50%;
+  background-color: darkgray;
+  border-bottom: 2px solid black;
 }
 #reverse {
   flex-direction: row-reverse;
