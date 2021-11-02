@@ -89,6 +89,9 @@ body {
   display: flex;
   flex-direction: row;
 }
+.titulo{
+  border-bottom: 2px solid black;
+}
 .element > .text {
   width: 50%;
   background-color: darkgray;
