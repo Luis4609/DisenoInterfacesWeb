@@ -12,7 +12,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
+  width:  98.4%;
   height: 325px;
   flex-wrap: wrap;
 }
@@ -29,6 +29,7 @@ div {
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
+  align-content: center;
   width: 85%;
   flex-grow: 1;
   
