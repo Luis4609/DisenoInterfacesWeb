@@ -1,0 +1,34 @@
+.main {
+  width: 65%;
+  height: 65vh;
+  /*Font-size de la pagina*/
+  font-size: 22px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0.5em;
+}
+.azul {
+  border: 1px dotted blue;
+  width: 45%;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.roja {
+  border: 1px dotted red;
+  width: 100%;
+}
+ul {
+  margin: 0;
+  list-style-position: outside;
+}
+/*Style listas*/
+ol {
+  list-style-type: upper-roman;
+  
+}

@@ -1,0 +1,27 @@
+.main {
+  height: 80vmin;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid gray;
+}
+.container {
+  height: 30%;
+  border: 1px solid black;
+  margin: 0.5rem;
+}
+.left {
+  flex-grow: 7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left > p:last-child{
+    align-self: flex-end;
+}
+.right {
+  flex-grow: 3;
+}
+.right > a{
+    color:red;
+    text-decoration: none;
+}

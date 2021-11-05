@@ -1,0 +1,48 @@
+header {
+  width: 80%;
+  /*Altura de la cabecera 9 veces el tamaño fuente del navegador*/
+  height: 9rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  /*Centrar contenedor*/
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: 5px 8px blue; */
+  box-shadow: 10px 10px 10px blue;
+  position: relative;
+  /*Sticky*/
+  position: sticky;
+  top: 0;
+  /*Background-image*/
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  /* background-position: right center; */
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+.titulo {
+  /*Centrar el titulo*/
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  padding-left: 2em;
+}
+.texto {
+  width: 80%;
+  margin-top: 10px;
+  /*Centrar contenedor*/
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  font-family: "Times New Roman", Times, serif;
+  text-indent: 25px;
+  font-style: italic;
+  text-align: justify;
+  line-height: 200%;
+}
+
+.texto::first-letter {
+  font-size: x-large;
+  font-weight: bold;
+}
