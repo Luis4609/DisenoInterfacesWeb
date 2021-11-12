@@ -35,3 +35,33 @@ div.container aside {
   font-size: 1em;
   box-sizing: border-box;
 }
+
+@media only screen and (max-width: 600px){
+  div.container article {
+    width: 100%;
+    background-image: url(img/content-is-like-water-1.jpg);
+  }
+  div.container aside{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  div.container article {
+    background-image: url(img/content-is-like-water-3.jpg);
+  }
+  div.container aside{
+    clear: both;
+    float: right;
+  };
+}
+
+@media only screen and (min-width: 1200px){
+  div.container article {
+    background-image: url(img/content-is-like-water-5.jpg);
+  }
+  div.container aside{
+    clear: both;
+    float: right;
+  };
+}
