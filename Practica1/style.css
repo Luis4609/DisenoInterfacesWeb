@@ -8,11 +8,11 @@ body {
 }
 
 .nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: #0eeca2;
-  position: relative;
 }
 
 .nav > .nav-header {
@@ -155,4 +155,21 @@ img {
   text-shadow: 0 0 2em rgba(255, 255, 255, 1);
   color: #ffffff;
   border-color: #ffffff;
+}
+@media only screen and (max-width: 600px) {
+  img {
+    width: 150px;
+  }
+  .imagen {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    width: 200px;
+  }
+  .imagen {
+    padding-left: 50px;
+  }
 }
