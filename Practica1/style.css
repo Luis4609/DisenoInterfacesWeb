@@ -156,15 +156,14 @@ img {
   color: #ffffff;
   border-color: #ffffff;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   img {
-    width: 150px;
+    width: 200px;
   }
   .imagen {
     padding-left: 50px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   img {
     width: 200px;
@@ -173,9 +172,9 @@ img {
     padding-left: 50px;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
   img {
-    width: 200px;
+    width: 150px;
   }
   .imagen {
     padding-left: 50px;
