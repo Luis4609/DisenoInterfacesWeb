@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 150px);
+    background: no-repeat url(grid.png) #fff;
+    color: #444;
+    width: 640px;
+    margin: 2.5rem;
+    font: 80% Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 200px;
+}
+
+.grid-item:first-child{
+    grid-column: 1/ 3;
+}
