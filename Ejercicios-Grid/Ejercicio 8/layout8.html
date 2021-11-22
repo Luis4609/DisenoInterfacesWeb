@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Autoflow example</title>
+	<link href="layout8.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<ul class="wrapper">   
+	  
+		<li class="text">
+			<p>In this example this text block is given a position on the grid. 
+				At the 768 pixel breakpoint it goes into the first row spanning both columns. 
+				At 1024 pixels it spans 2 rows and goes into the second column, spanning two columns.
+			</p>
+			<p>The other items are display according to the grid auto placement algorithm, with grid-auto-flow set to dense.</p>
+			<p>At the 1024 pixel breakpoint I set two of the images to span 2 columns. 
+				These wide images mean that if we set grid-auto-flow to sparse there would be a gap where the image 'balloons 5' 
+				sits as it would be displayed in source order after the wider 'balloons 4' image which needs to drop down to the next row to have room.
+			</p>
+		</li>
+		<li>
+			<img src="images/balloon1.jpg" alt="hot air balloon" />
+			<p>Balloons 1</p>
+		</li>
+		<li>
+			<img src="images/balloon2.jpg" alt="hot air balloon" />
+			<p>Balloons 2</p>
+		</li>
+		<li>
+			<img src="images/balloon3.jpg" alt="hot air balloon" />
+			<p>Balloons 3</p>
+		</li>
+		<li class="wide">
+			<img src="images/balloon4.jpg" alt="hot air balloon" />
+			<p>Balloons 4</p>
+		</li>
+		<li>
+			<img src="images/balloon5.jpg" alt="hot air balloon" />
+			<p>Balloons 5</p>
+		</li>
+		<li>
+			<img src="images/balloon6.jpg" alt="hot air balloon" />
+			<p>Balloons 6</p>
+		</li>
+		<li class="wide">
+			<img src="images/balloon7.jpg" alt="hot air balloon" />
+			<p>Balloons 7</p>
+		</li>
+		<li>
+			<img src="images/balloon8.jpg" alt="hot air balloon" />
+			<p>Balloons 8</p>
+		</li>
+	</ul>
+
+</body>
+
+</html>
