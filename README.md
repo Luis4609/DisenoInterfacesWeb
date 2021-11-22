@@ -20,3 +20,5 @@
    > Demo practica: http://htmlpreview.github.io/?https://github.com/Luis4609/DisenoInterfacesWeb/blob/main/Practica/ejemplo/index.html  
 
 > https://grid.malven.co/
+
+> https://dev.to/joyshaheb/css-grid-cheat-sheet-illustrated-in-2021-1a3
