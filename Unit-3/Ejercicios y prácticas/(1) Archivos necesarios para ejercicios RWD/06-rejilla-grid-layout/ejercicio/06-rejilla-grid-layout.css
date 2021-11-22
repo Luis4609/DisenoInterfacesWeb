@@ -5,7 +5,10 @@ div {
     border: 10px solid black;
     padding: 1em;
     margin: 0.5em;
-    text-align: center;    
+    text-align: center; 
+    display: grid;   
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
 }
 .element {
     border: 10px solid green;
@@ -20,4 +23,19 @@ div {
     border: 10px solid red;
     padding: 0.5em;
     margin: 0.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+    .row{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .row{
+        grid-template-columns: 1fr 1fr;
+    }
+}@media only screen and (max-width: 568px) {
+    .row{
+        grid-template-columns: 1fr;
+    }
 }

@@ -163,6 +163,7 @@ img {
   .imagen {
     padding-left: 50px;
   }
+ 
 }
 @media only screen and (max-width: 768px) {
   img {
@@ -171,6 +172,9 @@ img {
   .imagen {
     padding-left: 50px;
   }
+  .button{
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 600px) {
   img {
@@ -178,5 +182,8 @@ img {
   }
   .imagen {
     padding-left: 50px;
+  }
+  .button{
+    width: 40%;
   }
 }
