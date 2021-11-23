@@ -1,0 +1,52 @@
+/* Asignamos border-box a todos los elementos para evitar descuadres al asignar padding y bordes */
+*{
+	box-sizing: border-box;
+}
+
+/* Se asigna el alto del contenedor principal a 65% del alto del área de visualización (viewport) */
+#contenedor{
+	height: 65vh;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	font-size: 22px;
+}
+
+/* Se crean subcontenedores con margin. El display flex del contenedor en columnas se encarga de que no desborde el alto total */
+div.subcontainer{
+	display: flex;
+	margin: 0.5em;
+	flex: 1;
+}	
+
+/* Al utilizar display flex no se colapsan los márgenes y tenemos que eliminar uno de ellos manualmente */
+div.subcontainer:last-child{
+	margin-top: 0;
+}
+
+/* Cajas situadas dentro del primer contenedor */
+article.caja{
+	flex: 1; /* Otra opción sin flex sería el width a 50% */
+	border: 1px dotted blue;
+}
+
+/* Listado de la primera caja del contenedor */
+article.caja ol{
+	list-style-type: upper-roman;
+}
+
+/* Para cambiar los estilos de las viñetas con texto en negrita */
+article.caja ol ::marker{
+	font-weight: bold;
+}
+
+/* Quitamos uno de los bordes que se solapan para que quede mejor el diseño */
+article.caja:first-child{
+	border-right: none;
+}
+	
+/* Cajas situadas dentro del segundo contenedor */
+article.contenido{	
+	border: 1px dotted red;	
+	flex: 1;  /* Otra opción sin flex sería el width a 100% */
+}

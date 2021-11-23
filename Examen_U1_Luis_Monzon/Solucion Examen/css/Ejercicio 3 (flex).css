@@ -1,0 +1,50 @@
+/* Importante definir la altura en el contenedor principal con alguna unidad que no sea porcentaje relativo. Así se calculan bien las de los elementos internos */
+.main_container{		
+	border: 1px solid black;
+	padding: 0.5rem;
+	height: 80vmin;
+}
+
+/* Con display a flex por defecto ya se situán los div de la izquierda y la derecha en en la misma línea y con flex-wrap a nowrap para que no desborde
+   El ejercicio pide alinear verticalmente debajo (en este caso el eje secundario) */
+#contenedor{
+	display: flex;	
+	gap: 0.5rem;
+	align-items: flex-end;
+}
+
+/* El ejercicio pide una altura de 30% en los contenedores con flex */
+.flexbox{
+	height: 30%;
+	border: 1px solid black;
+}
+
+/* Se asigna el tamaño en proporción con flex-grow el 70% y la alineación que se pide en el enunciado */
+#izquierda{
+	flex-grow: 7;	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Se quita el margen de los párrafos para una mejor visualización */
+#izquierda p{
+	margin: 0;
+}
+
+/* Se modifica la alineación vertical de uno de los ítems */
+#izquierda p:last-child{
+	align-self: flex-end;
+}
+
+/* Se asigna el tamaño en proporción con flex-grow el 30% */
+#derecha{
+	flex-grow: 3;
+}
+
+/* Cambio a color rojo del enlace */
+#derecha a:link{
+	color: red;
+	text-decoration: none;
+}
+

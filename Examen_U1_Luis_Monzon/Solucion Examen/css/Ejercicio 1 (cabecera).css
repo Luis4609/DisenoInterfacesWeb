@@ -1,0 +1,52 @@
+/* Definimos el ancho y alineación por defecto. También se define un alto para comprobar que sticky funciona */
+.componente{
+	width: 80%;
+	margin: 0 auto;
+	min-height: 1000px;
+}
+
+/* En este caso se opta por la altura en rem para que se adapte al tamaño de fuente del navegador */
+.menu{
+	border: 1px solid black;
+	height: 9rem;
+	border-radius: 1em;
+	box-shadow: 5px 5px 5px darkblue;
+	box-sizing: border-box;
+}
+
+/* Imagen centrada con la propiedad background y contenedor con sticky para que se fije cuando se haga scroll. 
+   Otra opción es con fixed, pero descuadra el diseño */
+#cabecera{
+	background: url("../img/logo.png") no-repeat center right;
+	background-origin: content-box;
+	background-size: contain;	
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	margin-bottom: 0.5rem;
+	padding: 2em;
+}
+
+/* Texto posicionado verticalmente en el centro */
+#cabecera h1{
+	position: absolute;
+	top: 50%;
+	margin: 0;
+	transform: translateY(-50%);
+}
+
+/* Estilos del texto según requisitos del enunciado */
+#cuerpo{
+	border: 1px solid black;
+	line-height: 2;
+	text-indent: 2em;
+	font-style: italic;
+	text-align: justify;
+}
+
+/* Pseudo-elemento con la primera letra */
+#cuerpo::first-letter{
+	font-size: 32px;
+	font-weight: bold;
+}
+
