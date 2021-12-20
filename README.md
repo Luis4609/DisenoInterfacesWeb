@@ -14,8 +14,7 @@
     > 5.Listas
 
 - Exercices for Unit-2
-   > Flexbox: https://flexbox.malven.co/
-   > 
+   > Flexbox: https://flexbox.malven.com
    
    > Demo practica: http://htmlpreview.github.io/?https://github.com/Luis4609/DisenoInterfacesWeb/blob/main/Practica/ejemplo/index.html  
 
