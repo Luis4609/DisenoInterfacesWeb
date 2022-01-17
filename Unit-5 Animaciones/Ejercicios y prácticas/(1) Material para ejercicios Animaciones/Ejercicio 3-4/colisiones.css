@@ -1,0 +1,34 @@
+#container{
+	height: 90vh;
+	border: 1px solid black;
+	padding: 1em;
+}
+
+.block {
+	position: absolute;
+	background-color: greenyellow;
+	left: 50px;
+	width: 90px;
+	height: 90px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.cuadrado{
+	position: absolute;
+	background-color: grey;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+button#top{
+	transform: rotate(90deg);
+}
+
+button#bottom{
+	transform: rotate(270deg);
+}
