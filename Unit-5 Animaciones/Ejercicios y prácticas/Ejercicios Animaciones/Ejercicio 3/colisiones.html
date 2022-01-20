@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Ejemplo de animación con colisiones</title>
+	
+	<link rel="stylesheet" href="colisiones.css">
+	<script type="text/javascript" src="colisiones.js"></script> <!-- Archivo que habría que incluir con la funcionalidad -->
+</head>
+<body>
+	<div id="container">
+		<div id="controles">
+			<button id="left">&laquo;</button> 
+			<button id="right">&raquo;</button>
+			<button id="top">&laquo;</button> 
+			<button id="bottom">&laquo;</button>
+			<input type="number" value="50" id="move"></input>
+			<div class="block" id="train" onclick="myFunction()" draggable="true"><span id="texto">Pincha aquí también<span></div>
+		</div>
+		<div class="cuadrado"></div>
+	</div>
+	<script src="animation.js"></script>
+</body>
+</html>
+
