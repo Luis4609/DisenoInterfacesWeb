@@ -1,0 +1,19 @@
+.animate{
+	display: none;
+}
+
+div.primero {
+	background-color: yellow; 
+}
+
+div.segundo {
+	background-color: mediumorchid;	
+}
+
+div.tercero {
+	background-color: orange; 
+}
+
+div.cuarto {
+	background-color: green; 
+}
