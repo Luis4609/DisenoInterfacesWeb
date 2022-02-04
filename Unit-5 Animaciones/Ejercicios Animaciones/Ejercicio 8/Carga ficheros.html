@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Ejercicio de promesas</title>
+	
+	<style>
+		/* Estilos de la barra de progreso */
+		#progress{
+			margin-top: 1em;
+			height: 20px;
+			width: 30%;
+			border: 1px solid black;
+		}
+
+		.barra{
+			width: 0;
+			background-color: #ffe6e6;
+		}
+	</style>
+  </head>
+<body>
+	<div class="container">    
+		<h1>Carga de ficheros</h1>
+		<form>
+			<p> <!-- Formulario para elegir el tipo de carga -->
+				<select id="modo">
+					<option value="uno">Un fichero</option>
+					<option value="all">Los dos ficheros</option>
+					<option value="race">El que primero cargue</option>
+				</select>
+				<input type="button" id="cargar" value="Comenzar"/>
+			</p>			
+		</form>
+		<div id="mensaje">Aquí se realiza el seguimiento</div> <!-- Texto con el mensaje -->
+    </div>
+	
+	<div id="progress">
+		<div class="barra">&nbsp;</div> <!-- Este div crecerá de 0 a 100% en función del progreso de la animación -->	
+	</div>
+
+	<script src="ficheros.js"></script>
+  </body>
+</html>
