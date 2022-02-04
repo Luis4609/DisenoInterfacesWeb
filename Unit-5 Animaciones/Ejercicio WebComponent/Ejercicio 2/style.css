@@ -1,0 +1,14 @@
+.container{
+    width: 80px;
+    height: 30px;
+    display: flex;    
+}
+
+.color-fondo{
+    background-color: red;
+    flex-grow: 1;
+}
+.switch{
+    border: 1px solid black;
+    width: 40px;
+}
