@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Native Web Component</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <script src="blink.js"></script>	
+  <script src="blink (extends).js"></script>	
+</head>
+
+<body>
+	<div><wc-blink baseColor="#000000" alternativeColor="#FF0000" changeInterval="2">Hello</wc-blink></div>
+	<div><wc-blink>by HTMLElement</wc-blink></div>
+	
+	<div><span is="wc-blink-span" baseColor="#000000" alternativeColor="#FF0000" changeInterval="2">Hello</span></div>
+	<div><span is="wc-blink-span">by extending HTMLSpanElement</span></div>
+</body>
+
+</html>

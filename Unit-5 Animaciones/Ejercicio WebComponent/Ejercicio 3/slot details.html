@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Native Web Component</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+</head>
+
+<body>
+    <!-- Definimos tres componentes para hacer pruebas --> 
+	<element-details></element-details>
+
+	<element-details>
+	  <span slot="element-name">&lt;slot&gt;</span>
+	  <span slot="description">Un marcador de posición dentro de un
+		 componente web que los usuarios pueden rellenar con su propio marcado,
+		 con el efecto de componer diferentes árboles DOM
+		 juntos.</span>
+	  <dl slot="attributes">
+		<dt>name</dt>
+		<dd>El atributo name del slot.</dd>
+	  </dl>
+	</element-details>
+
+	<element-details>
+	  <span slot="element-name">&lt;template&gt;</span>
+	  <span slot="description">Un mecanismo para guardar contenido
+		 en el lado cliente que no se renderiza cuando la página se
+		 carga sino que posteriormente se puede instanciar en
+		 tiempo de ejecución usando JavaScript.</span>
+	</element-details> 
+	<script src="element-details.js"></script>	
+</body>
+
+</html>
