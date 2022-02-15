@@ -7,21 +7,20 @@ mySwitch.settings = "Off";
 
 console.log(mySwitch.settings);
 mySwitch.addEventListener("click", function () {
-    if(this.settings == "Off"){
-        container.style.flexDirection = "row-reverse";
-        backgroundColor.style.backgroundColor = "green";
-        mySwitch.innerText = "On";
-        mySwitch.settings = "On";
-        console.log("If");
-        console.log(mySwitch.settings);
-    }else{
-        container.style.flexDirection = "row";
-        backgroundColor.style.backgroundColor = "red";
-        mySwitch.innerText = "Off";
-        mySwitch.settings = "Off";
-        console.log("Else");
-    }
- 
+  if (this.settings == "Off") {
+    container.style.flexDirection = "row-reverse";
+    backgroundColor.style.backgroundColor = "green";
+    mySwitch.innerText = "On";
+    mySwitch.settings = "On";
+    console.log("If");
+    console.log(mySwitch.settings);
+  } else {
+    container.style.flexDirection = "row";
+    backgroundColor.style.backgroundColor = "red";
+    mySwitch.innerText = "Off";
+    mySwitch.settings = "Off";
+    console.log("Else");
+  }
 });
 
 // function changeSwitch() {
@@ -35,4 +34,3 @@ mySwitch.addEventListener("click", function () {
 // }
 
 // mySwitch.addEventListener("onclick", changeSwitch());
-
