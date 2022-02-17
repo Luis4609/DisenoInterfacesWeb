@@ -1,0 +1,65 @@
+<!-- Modificar de nuevo el ejemplo “3.6.2 Animaciones (pelota rodando)” ahora con una transición que haga lo siguiente y dure
+igualmente 2 segundos:
+• La pelota se mueve a la derecha cuando me posiciono por encima. Cuando termina la animación para y no vuelve a la
+izquierda como en el ejemplo original.
+• La pelota se mueve a la izquierda a su posición original cuando se pierde el foco. No se vuelve a mover a la derecha
+hasta que el usuario se posiciona por encima de nuevo. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Contenido multimedia</title>
+    <style>
+        body {
+            margin: 3em 10%;
+            background: #333;
+        }
+
+        .ball:hover {
+            animation-name: ballmove;
+            animation-duration: 2s;
+            /* animation-iteration-count: infinite; */
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+        }
+
+        .ball {
+            animation-name: ballback;
+            animation-duration: 2s;
+            /* animation-iteration-count: infinite; */
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+        }
+
+        @keyframes ballmove {
+            0% {
+                transform: translateX(0) rotate(0);
+            }
+
+            100% {
+                transform: translateX(450px) rotate(2turn);
+            }
+        }
+
+        @keyframes ballback {
+            0% {
+                transform: translateX(450px) rotate(2turn);
+            }
+
+            100% {
+                transform: translateX(0) rotate(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="ball" src="img/pelota.png" alt="ball" width="111" height="111" />
+</body>
+
+</html>
