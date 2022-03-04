@@ -35,7 +35,6 @@ function cargarPromesa(opcion){
 	}
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
 	let mensaje = document.getElementById('mensaje');
 	
@@ -62,6 +61,3 @@ document.addEventListener("DOMContentLoaded", () => {
 		});	
 	});    
 })
-
-
-

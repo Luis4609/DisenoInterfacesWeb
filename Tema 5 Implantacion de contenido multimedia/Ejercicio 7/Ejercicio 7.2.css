@@ -1,0 +1,20 @@
+body {margin:3em 10%; background:#333;}
+	
+.ball{				
+	animation-name: ballmove;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;				
+	animation-fill-mode: both; /* En realidad no hace falta, ya que al posicionarnos por encima la animación se pausa en el estado actual */
+	animation-direction: alternate;
+	animation-play-state: paused;
+}
+
+.ball:hover {				
+	animation-play-state: running;
+}
+			
+@keyframes ballmove {
+	0% {transform: translateX(0) rotate(0);}				
+	100% {transform: translateX(450px) rotate(2turn);}
+}
