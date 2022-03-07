@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<!-- ERROR DE FALTA DE LANG -->
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Examen parcial 2ª Evaluación</title>
+	<link rel="stylesheet" href="estilos1.css" />
+
+</head>
+
+<body>
+	<!-- Contenedor principal -->
+	<main id="wrapper">
+		<!-- Subcabecera para incluir la imagen -->
+		<nav id="cabecera">
+			<!-- Aquí va la etiqueta picture -->
+			<picture>
+				<source media="(min-width:2000px)" srcset="img/img_1600.webp" style="width:75%;">
+				<source media="(min-width:1200px)" srcset="img/img_1200.webp" style="width:65%;">
+				<source media="(min-width:900px)" srcset="img/img_800.webp" style="width:auto;">
+				<source  srcset="img/img_400.webp" style="width:auto;">
+				<!-- ATRIBUTO ALT EN IMG AGREGADO -->
+				<img src="img/img_800.png" alt="Imagen png">
+			</picture>
+			<!-- <img src="img/img_800.png"/> -->
+		</nav>
+
+		<!-- Sección para contenidos audiovisuales -->
+		<section id="multimedia">
+			<!-- Elemento donde se incluye el audio -->
+			<article id="audio" class="caja">
+				<!-- Aquí va la etiqueta audio -->
+				<audio controls autoplay loop preload="metadata">
+					<source src="audio/fondo.ogg" type="audio/ogg">
+					<source src="audio/fondo.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</article>
+
+			<!-- Elemento donde se incluye el vídeo de YouTube -->
+			<article id="video1" class="caja">
+				<!-- AGREGADO ATRIBUTO TITLE EN IFRAME -->
+				<!-- Le agrego la variable muted=1, porque si no, no se permite el autoplay -->
+				<iframe title="Video aplausos" width="420" height="300" src="https://www.youtube.com/embed/zu9W8AtZy7U?autoplay=1&mute=1&loop=1"></iframe>
+				<!-- Aquí debes modificar los parámetros del vídeo de YouTube -->
+			</article>
+		</section>
+
+	</main>
+
+</body>
+
+</html>

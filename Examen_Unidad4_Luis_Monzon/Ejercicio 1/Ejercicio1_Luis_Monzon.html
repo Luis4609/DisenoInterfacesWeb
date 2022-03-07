@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ejercicio 1</title>
+
+	<!-- Estilos en un fichero externo que no tendrás que modificar -->
+	<link rel="stylesheet" type="text/css" href="estilos1.css" />
+
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", () => {
+			// Constantes con la rotación y desplazamiento que hay que llevar a cabo
+			const DESP = 70;
+			const ROT = 360;
+
+			//Para obtener el número de milisegundos en los que se ejecuta una animación
+			function getMilisegundos() {
+				return document.querySelector("input[name='segundos']").value * 1000;
+			}
+
+			//Esta función se encarga de desplazar la imagen			
+			function desplazar() {
+				var milisegundos = getMilisegundos();
+
+				// Resto del código a implementar TO-DO
+				var start = null;
+				var element = document.getElementById('pelota1');
+
+				function step(getMilisegundos) {
+					if (!start) start = getMilisegundos;
+					var progress = getMilisegundos - start;
+					element.style.transform = 'translateX(' + Math.min(progress / 10, 20000) + 'px)';
+					if (progress < 14000) {
+						window.requestAnimationFrame(step);
+					}
+				}
+				// function step(timestamp) {
+				// 	if (!start) start = timestamp;
+				// 	var progress = timestamp - start;
+				// 	element.style.transform = 'translateX(' + Math.min(progress / 10, 20000) + 'px)';
+				// 	if (progress < 14000) {
+				// 		window.requestAnimationFrame(step);
+				// 	}
+				// }
+				window.requestAnimationFrame(step);
+
+			}
+
+			//Botón que activa la animación					
+			document.getElementById("pulsador").addEventListener("click", () => {
+				document.getElementById('pulsador').style.display = 'none';
+				desplazar();
+			});
+			var tiempoAnimacion = 0;
+
+
+			// document.querySelector('input').addEventListener('onchange', () => {
+			// 	tiempoAnimacion = document.querySelector("[name='segundos']").value;
+			// 	console.log(tiempoAnimacion)
+			// })
+		});
+	</script>
+</head>
+
+<body>
+	<img id="pelota1" class="pelota" src="pelota1.png" />
+	<div id="contenedor">
+		<div id="pulsador" class="activador"><span>A rodar</span></div>
+		<input type="text" name="segundos" size="5" class="activador"></input>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+#wrapper{
+	margin: 0 auto;
+	width: 90%;
+	border: 1px solid black;
+	padding: 1em;
+}
+
+#cabecera{
+	margin-bottom: 1em;
+	border:1px solid black;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#multimedia{
+	width:100%;
+	display: flex;
+}
+
+#logo {
+	min-height: 7rem;
+}
+
+.caja {
+	width:50%;
+	min-height:20rem;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#video1{
+	margin-left: 1em;
+}
+
+/* picture{
+	width: 65%;
+} */

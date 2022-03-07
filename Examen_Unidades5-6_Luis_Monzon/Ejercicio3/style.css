@@ -1,0 +1,49 @@
+.cuadrado {
+  background-color: yellow;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  animation: animacionCuadrado 4s 1s 5 alternate forwards;
+}
+
+@keyframes animacionCuadrado {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: red;
+    transform: rotate(360deg) scale(2);
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.cuadrado:hover {
+  animation-play-state: paused;
+}
+
+.titulo {
+  color: black;
+  border: 1px solid black;
+  width: 200px;
+}
+
+.titulo:hover {
+  animation: animacionTitulo 2s 0.5s;
+  /* animation-duration: 2s;
+  animation-delay: 0.5s; */
+}
+
+@keyframes animacionTitulo {
+  from {
+    color: black;
+  }
+  to {
+    color: red;
+    box-shadow: 5px 5px grey;
+  }
+}

@@ -1,0 +1,36 @@
+#container{
+	position: absolute;
+	right: 0px;		
+}
+
+img.pelota{
+	width: 6rem;	
+	height: 6rem;
+	position: relative;	
+}
+
+#contenedor{
+	float: right;		
+	text-align: center;		
+}
+
+#pulsador{
+	width: 6rem;		
+	height: 6rem;
+	border: 1px solid black;
+	background-color: red;			
+	color: white;
+	cursor: pointer;						
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button.activador{
+	display: block;
+	margin: auto;	
+}
+
+input[name="segundos"]{
+	margin: 1em;			
+}		
