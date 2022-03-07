@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<style>
+	#container{
+		width: 1000px;
+		height: 600px;
+		border: 1px solid black;
+		position: relative;
+	}
+
+	#dvd {
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		background-image: url("dvd1.gif");
+		top: 50%;
+		left: 0px;
+		transform: translateY(-50%);
+		position: absolute;
+		animation-duration: 8s;
+		animation-iteration-count: infinite;	
+		animation-name: Screenshot;
+	}
+
+	@keyframes Screenshot {
+		25% {
+			background-image: url("dvd2.gif");
+			top: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		/* Con JavaScript o algún preprocesador se podría almacenar el valor de los calc en variables */
+		50% {
+			background-image: url("dvd3.gif");		
+			top: 50%;
+			left: calc(100% - 210px); /* Restamos ancho y margen */ 
+			transform: translateY(-50%);	
+		}
+		
+		75% {
+			background-image: url("dvd4.gif");
+			top: calc(100% - 210px); /* Restamos alto y margen */
+			left: 50%;
+			transform: translateX(-50%);	
+		}
+		
+		100% {
+			background-image: url("dvd1.gif");
+			top: 50%;
+			left: 0px;
+			transform: translateY(-50%);
+		}
+	}
+</style>
+
+</head>
+<body>
+
+<div id="container">
+	<div id="dvd"></div>
+</div>	
+
+</body>
+</html>

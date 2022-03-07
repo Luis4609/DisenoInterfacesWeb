@@ -45,7 +45,7 @@ async function cargarFichero(){
 	// Cargamos la promesa que corresponda
 	try {
 		respuesta = await cargarPromesa(document.getElementById("modo").value);	
-		console.log(respuesta); // Ver log con la respuesta de los métodos fetch
+		console.log(`Respuesta de cargarPromesa: ${respuesta}`); // Ver log con la respuesta de los métodos fetch
 		respuesta = await loadBar();		
 	} catch (error) {
 		respuesta = error; // En este caso el mensaje a mostrar es la excepción (que en realidad sería el reject de la promesa generada con los fetch)
